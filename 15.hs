@@ -15,7 +15,9 @@
  - -}
 module Main where
 
-main = print (pt !! 40 !! 20)
+main = do 
+       print (pt !! 40 !! 20)
+       print (alternate 20)
 
 next :: Num c => [c] -> [c]
 next xs = zipWith (+) ([0] ++ xs) (xs ++ [0])
@@ -23,3 +25,4 @@ next xs = zipWith (+) ([0] ++ xs) (xs ++ [0])
 pt :: [[Integer]]
 pt = iterate next [1]
 
+alternate n = (product [1..n*2]) `div` product [1..n] ^ 2
