@@ -50,12 +50,7 @@ source =                      [[75],
 
 
 
-main = print (1) 
-
--- a is the previous maxPathSum row, b is the next row of triangle data with a + 1 elements
-genNextMaxPathSum a b = zipWith (max) (zipWith (+) (0 : a) b) (zipWith (+) (a ++ [0]) b)
-
-problem_18 = head $ foldr1 g tri 
+main = print(head $ foldr1 g tri) 
   where
     f x y z = x + max y z
     g xs ys = zipWith3 f xs ys $ tail ys
