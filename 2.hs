@@ -7,9 +7,7 @@
 
 module Two where
 
-problem_two = do
-
--- we have an extra "1" at the start of our sequence...
+problem_two = -- we have an extra "1" at the start of our sequence...
   (sum [x | x <- takeWhile (< 4000001) fibs, even x] - 1) 
 
 
