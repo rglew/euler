@@ -1,4 +1,4 @@
-module Main where
+module TwentyTwo where
 
 import Data.Char
 import Data.List

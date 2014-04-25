@@ -1,4 +1,4 @@
-module Main where
+module TwentyThree where
 
 
 import Data.List

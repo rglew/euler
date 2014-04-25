@@ -21,9 +21,9 @@
      What is the first term in the Fibonacci sequence to contain 1000 digits?
  -}
 
-module Main where
+module TwentyFive where
 
 fibs :: [Integer]
 fibs = 1:1:zipWith (+) fibs (tail fibs)
 
-main = print ((+) 1 $ length $ takeWhile (\x->(length $ show x) /= 1000) fibs)
+problem_twentyfive = (+) 1 $ length $ takeWhile (\x->(length $ show x) /= 1000) fibs

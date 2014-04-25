@@ -1,5 +1,5 @@
 {- http://projecteuler.net/problem=11 -}
-module Main where
+module Eleven where
 
 --Data
 grid = [
@@ -38,5 +38,5 @@ max_prod x y = maximum [horiz_prod x y,
                         lead_diag x y,
                         trail_diag x y]
 
-main = do
-     putStrLn $ show $ maximum [max_prod a b | a <- [0..15], b <- [0..15]]
+problem_eleven = do
+      show $ maximum [max_prod a b | a <- [0..15], b <- [0..15]]

@@ -7,11 +7,11 @@ For example, the proper divisors of 220 are 1, 2, 4, 5, 10, 11, 20, 22, 44, 55 a
 Evaluate the sum of all the amicable numbers under 10000.
 -}
 
-module Main where
+module TwentyOne where
 
 import Data.Tuple
 
-main = print (sum $ map (\x-> snd x) $ filter (\x->an2 x)  [(x,d x)|x<-[2..9999]])
+problem twentyone = sum $ map (\x-> snd x) $ filter (\x->an2 x)  [(x,d x)|x<-[2..9999]]
 
 --d :: Int -> Int
 d n 

@@ -4,10 +4,9 @@
 --What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
 
-module Main where
+module Five where
 
-main :: IO()
-main =  print $ divisibleTo 20
+problem_five = divisibleTo 20
  
 
 -- basic technique seems to be to divisible by X, x-1 ,x-2 etc...

@@ -7,7 +7,7 @@ If all the numbers from 1 to 1000 (one thousand) inclusive were written out in w
 NOTE: Do not count spaces or hyphens. For example, 342 (three hundred and forty-two) contains 23 letters and 115 (one hundred and fifteen) contains 20 letters. The use of "and" when writing out numbers is in compliance with British usage.
 -}
 
-module Main where
+module Seventeen where
 
 import Data.Char
 
@@ -16,7 +16,7 @@ dd = [[10,3],[20,6],[30,6],[40,5],[50,5],[60,5],[70,7],[80,6],[90,6]]
 td = [[100,10],[200,10],[300,12],[400,11],[500,11],[600,10],[700,12],[800,12],[900,11]]
 
 
-main = print(sum [calc x| x <- [1..1000]])
+problem_seventeen = sum [calc x| x <- [1..1000]]
 
 sgl n a
     | n == 0 = a

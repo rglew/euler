@@ -16,12 +16,12 @@ Which starting number, under one million, produces the longest chain?
 NOTE: Once the chain starts the terms are allowed to go above one million.
 -}
 
-module Main where
+module Fourteen where
 
 import Data.List (maximumBy)
 import Data.Function (on)
 
-main = print (longest)
+problem_fourteen = longest
 
 --collatz :: Integer a => a -> [a] -> [a]
 collatz :: Integral a => a -> [a] -> [a]

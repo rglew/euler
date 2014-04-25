@@ -13,9 +13,9 @@
  - Pascal's triangle formula...  
  - # of routes occurs in the triangle at row 2n, column n
  - -}
-module Main where
+module Fifteen where
 
-main = do 
+problem_fifteen = do 
        print (pt !! 40 !! 20)
        print (alternate 20)
 

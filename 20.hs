@@ -10,9 +10,9 @@
  -
  - -}
 
-module Main where
+module Twenty where
 
-main = print (sum $ toInt $ show $ product [1..100])
+problem_twenty = sum $ toInt $ show $ product [1..100]
 
 toInt :: [Char] -> [Int]
 toInt x = map (\z -> read [z]::Int) x

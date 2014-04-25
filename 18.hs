@@ -30,7 +30,7 @@ Find the maximum total from top to bottom of the triangle below:
 NOTE: As there are only 16384 routes, it is possible to solve this problem by trying every route. However, Problem 67, is the same challenge with a triangle containing one-hundred rows; it cannot be solved by brute force, and requires a clever method! ;o)
 -}
 
-module Main where
+module Eighteen where
 
 source =                      [[75],
                              [95, 64],
@@ -50,12 +50,11 @@ source =                      [[75],
 
 
 
-main = print (problem_18) 
 
 -- a is the previous maxPathSum row, b is the next row of triangle data with a + 1 elements
 genNextMaxPathSum a b = zipWith (max) (zipWith (+) (0 : a) b) (zipWith (+) (a ++ [0]) b)
 
-problem_18 = head $ foldr1 g tri 
+problem_eighteen= head $ foldr1 g tri 
   where
     f x y z = x + max y z
     g xs ys = zipWith3 f xs ys $ tail ys

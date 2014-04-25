@@ -14,13 +14,13 @@
  -
  -  Find the value of d < 1000 for which 1/d contains the longest recurring cycle in its decimal fraction part.-}
 
-module Main where
+module TwentySix where
 
 import Data.List
 import Data.Ord 
 
 
-main = print (fst $ maximumBy (comparing snd) [(n,recurringCycle n) | n <- [1..999]])
+problem_twentysix = fst $ maximumBy (comparing snd) [(n,recurringCycle n) | n <- [1..999]]
 
 recurringCycle d = remainders d 10 []
 

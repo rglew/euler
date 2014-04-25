@@ -2,11 +2,11 @@
 -- Find the largest palindrome made from the product of two 3-digit numbers.
 
 
-module Main where
+module Four where
 
 import Control.Applicative
 
-main = do
+problem_four = do
 
    print (maximum [x | x <- (*) <$> [1..999] <*> [1..999], isPalindrome x])
 

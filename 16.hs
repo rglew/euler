@@ -5,8 +5,8 @@
  - What is the sum of the digits of the number 21000?
  - -}
 
-module Main where
+module Sixteen where
 
 import Data.Char
 
-main = print (sum $ map digitToInt $ show (2^1000))
+problem_sixteen = sum $ map digitToInt $ show (2^1000)

@@ -4,9 +4,9 @@
 --   There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 --   Find the product abc.
 
-module Main where
+module Nine where
 
 -- worlds most inneficient program!
 
-main =  print([(x,y,z) | x <- [1..1000], y <- [1..1000], z <- [1..1000],((x^2) + (y^2) == (z^2)) && (x+y+z == 1000)])
+problem_nine =  [(x,y,z) | x <- [1..1000], y <- [1..1000], z <- [1..1000],((x^2) + (y^2) == (z^2)) && (x+y+z == 1000)]
 

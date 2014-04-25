@@ -5,12 +5,12 @@
 
 -- By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
-module Main where
+module Two where
 
-main = do
+problem_two = do
 
 -- we have an extra "1" at the start of our sequence...
-  print (sum [x | x <- takeWhile (< 4000001) fibs, even x] - 1) 
+  (sum [x | x <- takeWhile (< 4000001) fibs, even x] - 1) 
 
 
 fibs = 1:1:zipWith (+) fibs (tail fibs)

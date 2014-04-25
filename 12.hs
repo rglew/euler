@@ -18,11 +18,10 @@ We can see that 28 is the first triangle number to have over five divisors.
 What is the value of the first triangle number to have over five hundred divisors?
 -}
 
-module Main where
+module Twelve where
 
 import Data.Maybe
-main :: IO ()
-main = print (minimum $ [x|x<-(take 15000 $ genGTN),(length $ factors x) > 500])
+problem_twelve = minimum $ [x|x<-(take 15000 $ genGTN),(length $ factors x) > 500]
 
 
 
